@@ -1,0 +1,27 @@
+/* alerts css file */
+
+.msg{
+		width:auto;
+		height: auto;
+margin:10px auto 0 auto;
+padding: 5px 5px 5px 40px;
+-moz-border-radius: 7px;
+-webkit-border-radius: 7px;
+display: none;
+		}
+		
+.success{
+background:#ffffe0 url(tick.png) no-repeat scroll 10px 50%;
+border:1px solid #97b980;
+}
+
+.information{
+background:#FFF2CE url(error.png) no-repeat scroll 10px 50%;
+border:1px solid #EBD085;
+}
+
+.error{
+background:#FFCCCC url(exclamation.png) no-repeat scroll 10px 50%;
+border:#ff5953 1px solid;
+}
+

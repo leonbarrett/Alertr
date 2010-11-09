@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html>
+	<head>
+		<title>Alertr</title>
+	<style type="text/css">
+		body
+		{
+			background-color: #ffffff;
+			color: #111111;
+		}
+		
+		#content{
+		width: 650px;
+		margin: 0 auto 0 auto;
+		}
+
+		
+
+
+pre{
+	display:block;
+	font:12px "Courier New", Courier, monospace;
+	padding:10px;
+	border:1px solid #bae2f0;
+	background:#e3f4f9;	
+	margin:.5em 0;
+	width:auto;
+	}
+	
+
+		</style>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
+		
+		<script src="http://static.leonbarrett.com/js/retweet.js"></script>
+		
+		<link href="alertr/alertr.css" media="screen" rel="stylesheet" type="text/css" />
+
+		<script type="text/javascript" src="alertr/alertr.js"></script>
+		
+		
+		<link href="http://static.leonbarrett.com/facebox/facebox.css" media="screen" rel="stylesheet" type="text/css"/>	
+		<script src="http://static.leonbarrett.com/facebox/facebox.js" type="text/javascript"></script>
+		
+		<link href="http://static.leonbarrett.com/downloadr/downloadr.css" media="screen" rel="stylesheet" type="text/css"/>
+		<script src="http://static.leonbarrett.com/downloadr/jqbrowser.js" type="text/javascript"></script>
+		<script src="http://static.leonbarrett.com/downloadr/downloadr.js" type="text/javascript"></script>
+		
+		<script type="text/javascript">
+		$(document).ready(function() {
+			
+			$('a[rel*=downloadr]').downloadr();
+			
+	$('.demoLink').click(function(){
+	$('.msg').alertr(5000);
+	});
+	
+
+		
+	});				
+			
+					
+			</script>
+	</head>
+	<body>
+	<div id="content">
+	
+	<h1>Alertr</h1>
+	
+	<p><a class="retweet self"></a></p>
+
+	
+	<h2>About</h2>
+	<p>Alertr is a simple jQuery alert plugin.</p>
+	<p>Use it to give feedback to your users when they have updated a page for example.</p>
+	
+	<h2>Features</h2>
+	<p>There are three types of alert:
+		<ol>
+			<li>Success</li>
+			<li>Error</li>
+			<li>Information</li>
+		</ol>
+	</p>
+	
+	<p>The alert can fade away after a specified amount of time</p>
+	<p>The alert can be clicked to fade away</p>
+	
+	<h2>Usage</h2>
+	<p>Include the CSS and plugin files in your header</p>
+	
+	
+<pre><xmp><link href="css/alertr.css" media="screen" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/alertr.js"></script></xmp></pre>
+	<p>To call simply add this function call:</p>
+<pre><xmp>$('.msg').alertr();</xmp></pre>
+<p>You can pass in a parameter which is the number of seconds (in milliseconds) for which to display the alert. If you leave it blank the alert will stay on screen until clicked</p>
+<pre><xmp>$('.msg').alertr(5000);</xmp></pre>
+<p>And then apply the class of "msg" and either success, error or information to your html element. For example:</p>
+
+<pre><xmp><p class="success msg">This is a success alert on a paragraph</p>
+<div class="error msg">This is an error alert on a div</div>
+<ul>
+<li class="information msg">This is an information alert on a list item</li>
+</ul></xmp></pre>
+
+	
+<h2>Demo</h2>	
+<div class="success msg">This is a success alert</div>
+<p class="demoLink">Click here to see a demo (fades away after 5 seconds)</p>
+
+<h2>Download</h2>
+<p><a href="http://www.leonbarrett.com/code/alertr/latest.zip" rel="downloadr" title="alertr">Download the source code</a></p>
+	</div>
+	</body>
+</html>
